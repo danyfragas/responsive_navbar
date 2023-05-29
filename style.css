@@ -1,67 +1,54 @@
-* {
+*{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; 
     font-family: sans-serif;
 }
 
-body {
-    background: url();
-    background-size: cover;
-    height: 100vh;
-    background-position: center;    
+header{
+    background-color: #000000;
 }
 
-header {
+.nav-bar{
     width: 100%;
     height: 60px;
-    display: flex;
-    justify-content: space-between;
+    display: flex; 
+    justify-content: space-between; 
     align-items: center;
-    position: fixed;
-    z-index: 99;
-    box-shadow: 0 0 10px #000;
+    position: fixed; 
+    z-index: 99; 
+    box-shadow: 0 0 10px #000; 
     background-color: rgba(0, 0, 0, 0.79);
-    font-size: 14px
+    font-size: 14px;
 }
 
-#chk1 {
-    display: none;
+.logo{ 
+    color: #f4f0f0;
+    font-size: 15px;   
+    margin-left: 58px;
+    margin-right: 58px;
+    display: flex;
 }
 
-i {
-    color: #ffffff;
-    cursor: pointer;
-}
-
-header .logo {
-    flex: 1;
-    color: #ffffff;
-    margin-left: 50px;
-    font-size: 15px;
-
-}
-
-header .search-box {
+.search-box{
     flex: 1;
     position: relative;
 }
 
-.search-box input {
-    width: 100%;
+.search-box input{
     height: 40px;
     border: none;
-    outline: none;
+    outline: none; 
     background: #f2f2f2;
-    border-radius: 30px;
-    color: gray;
-    font-size: 16px;
+    border-radius: 30px; 
+    color: gray; 
+    font-size: 14px;
     text-align: left;
     padding-left: 10px;
-    padding-right: 40px;
+    padding-right: 130px;
 }
 
-.search-box button {
+.search-box button{
     cursor: pointer;
     width: 40px;
     height: 40px;
@@ -71,70 +58,51 @@ header .search-box {
     top: 0;
     right: 0;
     transform: scale(0.9);
-    background: #155e8f;
+    background: #22c3cf;
 }
 
-header ul {
+.home ul{
     flex: 2;
-    display: flex; /* um do lado do outro*/
+    display: flex;
     justify-content: space-evenly;
+    margin-left: 30px;
 }
 
-header ul li {
+.home ul li{
     list-style: none;
+    display: inline-block;
 }
 
-header ul li a {
+.home ul li a{
     text-decoration: none;
     color: #ffffff;
     text-transform: uppercase;
+    font-size: 13px;
     padding: 10px 15px;
 }
 
-header ul li a:hover {
-    border-bottom: 2px solid #155e8f; /* linha abaixo ao passar o cursos*/
+.home ul li a:hover{
+    border-bottom: 2px solid #22c3cf; 
 }
 
-header .menu {
-    font-size: 2.5em;
-    display: none;
+.social{
+    flex: 2;
+    display: flex;
+    justify-content: space-evenly;
 }
 
-@media(max-width: 1000px){
-    .search-box button{
-        position: absolute;
-    }
-
-    header ul{
-        position: fixed;
-        top: 100px;
-        right: -100%;
-        background: rgba(0, 0, 0, 0.5);
-        height: calc(100vh - 100px);
-        width: 50%;
-        flex-direction: column;
-        align-items: center;
-        transition: right 0.5s linear;
-    }
-
-    header .menu{
-        display: block;
-        width: 100px;
-        text-align: center;
-    }
-
-    #chk1:checked ~ ul{
-        right: 0;
-    }
+.social ul li{
+    list-style: none;
+    margin-right: 15px;
 }
 
-@media(max-width:600px){
-    header .logo{
-        font-size: 10px;
-        margin-left: 8px;
-    }
-
-    header ul{
-        width: 100%;
-    }
+.social ul li a{
+    text-decoration: none;
+    color: #22c3cf;
+    padding: 10px 15px;
 }
+
+.social ul li a:hover{
+    border-bottom: 2px solid #22c3cf; 
+}
+
